@@ -9,17 +9,18 @@ jobs:
 
     steps:
     - uses: actions/checkout@v3
-    - name: Set up Python
-      uses: actions/setup-python@v3
-      with:
-        python-version: '3.10'
-        cache: 'pip'
     - name: Install cookiecutter
       run: pipx install cookiecutter
     - name: Create slide
-      run: cookiecutter . --no-input -o /tmp/slide
+      run: cookiecutter . --no-input -o .work/slide
+    - name: Set up Python
+      uses: actions/setup-python@v3
+      with:
+        python-version: '3.x'
+        cache: 'pip'
+        cache-dependency-path: '**/requirements.txt'
     - name: Build sphinx-revealjs
       run: |
-        cd /tmp/slide/cookiecutter_sphinx_revealjs
+        cd .work/slide
         pip install -r requirements.txt
         make revealjs
