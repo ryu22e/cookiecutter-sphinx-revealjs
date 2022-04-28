@@ -1,0 +1,20 @@
+{
+  "project_name": "cookiecutter sphinx revealjs",
+  "project_slug": "{{ cookiecutter.project_name.lower()|replace(' ', '_')|replace('-', '_')|replace('.', '_')|trim() }}",
+  "author_name": "Ryuji Tsutsui",
+  "release": "1.0",
+  "language": "ja",
+  "revealjs_style_theme": [
+    "black",
+    "white",
+    "league",
+    "beige",
+    "sky",
+    "night",
+    "serif",
+    "simple",
+    "solarized",
+    "blood",
+    "moon"
+  ]
+}
