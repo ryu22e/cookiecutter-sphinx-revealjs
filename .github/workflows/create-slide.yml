@@ -15,7 +15,7 @@ jobs:
         cache-name: cache-python-modules
       with:
         path: ~/.cache/pip
-        key: ${{ runner.os }}-build-${{ env.cache-name }}-${{ hashFiles('./requirements.txt') }}
+        key: ${{ runner.os }}-build-${{ env.cache-name }}-${{ hashFiles('**/requirements.txt') }}
         restore-keys: |
           ${{ runner.os }}-build-${{ env.cache-name }}-
           ${{ runner.os }}-build-
@@ -26,4 +26,11 @@ jobs:
         python-version: '3.10'
     - run: pip install -r requirements.txt
     - name: Create slide
-      run: cookiecutter --no-input . -o /temp/slide
+      run: cookiecutter --no-input . -o /tmp/slide
+    - name: Build sphinx-revealjs
+      run: |
+        cd /tmp/slide/cookiecutter_sphinx_revealjs
+        python -m venv .venv --upgrade-deps
+        source .venv/bin/activate
+        pip install -r requirements.txt
+        make revealjs
