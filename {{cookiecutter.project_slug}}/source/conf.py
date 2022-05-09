@@ -18,7 +18,7 @@
 # -- Project information -----------------------------------------------------
 
 project = "{{ cookiecutter.project_name }}"
-copyright = "2022, {{ cookiecutter.author_name }}"  # TODO Variable fiscal year
+copyright = "{{ cookiecutter.copyright_year }}, {{ cookiecutter.author_name }}"
 author = "{{ cookiecutter.author_name }}"
 
 # The full version, including alpha/beta/rc tags
