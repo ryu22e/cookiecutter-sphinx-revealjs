@@ -6,6 +6,7 @@
   "author_name": "Ryuji Tsutsui",
   "release": "1.0",
   "language": "ja",
+  "enable_budoux": "y",
   "revealjs_style_theme": [
     "black",
     "white",
