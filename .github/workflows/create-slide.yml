@@ -12,7 +12,7 @@ jobs:
     - name: Install cookiecutter
       run: pipx install cookiecutter
     - name: Create slide
-      run: cookiecutter . --no-input -o .work/slide
+      run: PYTHONPATH=${PWD} cookiecutter . --no-input -o .work/slide
     - name: Set up Python
       uses: actions/setup-python@v3
       with:

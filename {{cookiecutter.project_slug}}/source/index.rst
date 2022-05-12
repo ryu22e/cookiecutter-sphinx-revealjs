@@ -1,3 +1,1 @@
-######################
-TODO Fill in the title
-######################
+{{ cookiecutter.title|rest_title0 }}
