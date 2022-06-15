@@ -18,7 +18,7 @@ jobs:
     - name: Create slide
       run: PYTHONPATH=${PWD} cookiecutter . --no-input -o .work/slide
     - name: Set up Python
-      uses: actions/setup-python@v3
+      uses: actions/setup-python@v4
       with:
         python-version: ${{ matrix.python-version }}
         cache: 'pip'
