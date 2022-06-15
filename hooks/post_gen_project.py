@@ -15,3 +15,7 @@ if "{{ cookiecutter.enable_budoux }}" == "y":
 if "{{ cookiecutter.enable_robots_txt }}" != "y":
     robots_txt_path = Path("source") / "robots.txt"
     robots_txt_path.unlink()
+
+if "{{ cookiecutter.enable_favicon }}" != "y":
+    favicon_path = Path("source") / "favicon.ico"
+    favicon_path.unlink()

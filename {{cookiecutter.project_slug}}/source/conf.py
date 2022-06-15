@@ -63,6 +63,9 @@ html_extra_path = [
 {%- if cookiecutter.enable_robots_txt == "y" %}
     "robots.txt",
 {%- endif %}
+{%- if cookiecutter.enable_favicon == "y" %}
+    "favicon.ico",
+{%- endif %}
 ]
 
 # -- Options for HTML output -------------------------------------------------
