@@ -22,5 +22,8 @@
     "blood",
     "moon"
   ],
-  "_extensions": ["local_extensions.rest.RestTitle0Extensions"]
+  "_extensions": ["local_extensions.rest.RestTitle0Extensions"],
+  "_copy_without_render": [
+    ".github/workflows/gh-pages.yml"
+  ]
 }
