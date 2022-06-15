@@ -1,0 +1,33 @@
+version: 2
+updates:
+- package-ecosystem: "github-actions"
+  directory: "/"
+  schedule:
+    interval: "weekly"
+    day: "saturday"
+    time: "08:00"
+    timezone: Asia/Tokyo
+  open-pull-requests-limit: 10
+  target-branch: main
+  reviewers:
+  - ryu22e
+  assignees:
+  - ryu22e
+- package-ecosystem: pip
+  directory: "/"
+  schedule:
+    interval: "weekly"
+    day: "saturday"
+    time: "08:00"
+    timezone: Asia/Tokyo
+  open-pull-requests-limit: 10
+  target-branch: main
+  reviewers:
+  - ryu22e
+  assignees:
+  - ryu22e
+  ignore:
+    - dependency-name: "flake8"
+    - dependency-name: "black"
+    - dependency-name: "isort"
+    - dependency-name: "mypy"
