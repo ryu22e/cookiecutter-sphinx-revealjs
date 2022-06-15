@@ -59,6 +59,11 @@ language = "{{ cookiecutter.language }}"
 # This pattern also affects html_static_path and html_extra_path.
 exclude_patterns = []
 
+html_extra_path = [
+{%- if cookiecutter.enable_robots_txt == "y" %}
+    "robots.txt",
+{%- endif %}
+]
 
 # -- Options for HTML output -------------------------------------------------
 

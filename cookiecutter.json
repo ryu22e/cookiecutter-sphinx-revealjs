@@ -7,6 +7,7 @@
   "release": "1.0",
   "language": "ja",
   "enable_budoux": "y",
+  "enable_robots_txt": "y",
   "revealjs_style_theme": [
     "black",
     "white",
