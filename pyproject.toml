@@ -1,0 +1,24 @@
+[tool.pytest.ini_options]
+minversion = 7.0
+addopts = "-q --flake8 --black --isort --mypy --cov --cov-report=xml --ignore-glob={{cookiecutter.project_slug}}/source/*"
+testpaths = [
+    "tests",
+]
+
+[tool.black]
+exclude = '(/{{cookiecutter.project_slug}}\/source/)'
+
+[tool.isort]
+skip_glob = '{{cookiecutter.project_slug}}/source/*'
+
+[tool.mypy]
+exclude = [
+    '{cookiecutter.project_slug}}\/source/.*$',
+]
+
+[[tool.mypy.overrides]]
+# ignore_missing_imports will no longer be needed in the next budoux of version 0.1.0.
+module = [
+    'budoux.*',
+]
+ignore_missing_imports = true

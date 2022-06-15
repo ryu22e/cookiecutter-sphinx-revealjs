@@ -10,9 +10,13 @@
 # add these directories to sys.path here. If the directory is relative to the
 # documentation root, use os.path.abspath to make it absolute, like shown here.
 #
-# import os
-# import sys
-# sys.path.insert(0, os.path.abspath('.'))
+{%- if cookiecutter.enable_budoux == "y" %}
+import os
+import sys
+
+
+sys.path.append(os.path.abspath('_ext'))
+{%- endif %}
 
 
 # -- Project information -----------------------------------------------------
@@ -32,7 +36,13 @@ release = "{{ cookiecutter.release }}"
 # ones.
 extensions = [
     "sphinx_revealjs",
+{%- if cookiecutter.enable_budoux == "y" %}
+    "sphinx_budoux",
+{%- endif %}
 ]
+{%- if cookiecutter.enable_budoux == "y" %}
+budoux_target_tags = ["h1", "h2", "h3", "p"]
+{%- endif %}
 
 # Add any paths that contain templates here, relative to this directory.
 templates_path = ["_templates"]
