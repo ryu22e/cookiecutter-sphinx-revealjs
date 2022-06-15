@@ -19,3 +19,10 @@ if "{{ cookiecutter.enable_robots_txt }}" != "y":
 if "{{ cookiecutter.enable_favicon }}" != "y":
     favicon_path = Path("source") / "favicon.ico"
     favicon_path.unlink()
+
+license = "{{ cookiecutter.license }}"
+licenses_dir = Path("licenses")
+if license == "CC BY 4.0":
+    license_path = licenses_dir / "CC-BY-4.0"
+    shutil.copyfile(license_path, Path.cwd() / "LICENSE")
+shutil.rmtree(licenses_dir)

@@ -22,6 +22,10 @@
     "blood",
     "moon"
   ],
+  "license": [
+      "CC BY 4.0",
+      "None"
+  ],
   "_extensions": ["local_extensions.rest.RestTitle0Extensions"],
   "_copy_without_render": [
     ".github/workflows/gh-pages.yml"
