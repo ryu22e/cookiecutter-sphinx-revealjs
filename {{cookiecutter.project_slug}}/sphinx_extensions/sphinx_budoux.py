@@ -25,7 +25,7 @@ def html_page_context(
         (soup.find_all(target_tag) for target_tag in app.config["budoux_target_tags"])
     )
     for tag in tags:
-        tag.string = parser.translate_html_string(tag.get_text())
+        tag.string = parser.translate_html_string(str(tag))
     context["body"] = soup.prettify(formatter=None)  # type: ignore
 
 
