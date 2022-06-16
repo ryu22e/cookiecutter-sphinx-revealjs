@@ -25,6 +25,6 @@ jobs:
         cache-dependency-path: '**/requirements.txt'
     - name: Build sphinx-revealjs
       run: |
-        cd .work/slide/cookiecutter_sphinx_revealjs
+        cd .work/slide/cookiecutter-sphinx-revealjs
         pip install -r requirements.txt
         make revealjs

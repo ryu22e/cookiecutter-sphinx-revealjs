@@ -1,6 +1,6 @@
 {
   "project_name": "cookiecutter sphinx revealjs",
-  "project_slug": "{{ cookiecutter.project_name.lower()|replace(' ', '_')|replace('-', '_')|replace('.', '_')|trim() }}",
+  "project_slug": "{{ cookiecutter.project_name.lower()|replace(' ', '-')|replace('_', '-')|replace('.', '-')|trim() }}",
   "title": "Example",
   "copyright_year": "2022",
   "author_name": "Ryuji Tsutsui",
