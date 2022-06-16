@@ -1,7 +1,7 @@
 import unicodedata
 from dataclasses import dataclass
 
-from jinja2.ext import Extension
+from cookiecutter.utils import simple_filter
 
 
 @dataclass(frozen=True)
@@ -26,17 +26,15 @@ class String:
         return sum((c.length for c in self._chars))
 
 
-def rest_title0(title: str) -> str:
+def _rest_title0(title: str) -> str:
     s = String(title)
     length = s.length
     sharps = "#" * length
-    expected = f"""{sharps}
+    return f"""{sharps}
 {title}
 {sharps}"""
-    return expected
 
 
-class RestTitle0Extensions(Extension):
-    def __init__(self, environment):
-        super().__init__(environment)
-        environment.filters["rest_title0"] = rest_title0
+@simple_filter
+def rest_title0(title: str) -> str:
+    return _rest_title0(title)

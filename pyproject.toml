@@ -22,3 +22,9 @@ module = [
     'budoux.*',
 ]
 ignore_missing_imports = true
+
+[[tool.mypy.overrides]]
+module = [
+    'cookiecutter.*',
+]
+ignore_missing_imports = true

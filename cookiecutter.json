@@ -26,7 +26,7 @@
       "CC BY 4.0",
       "None"
   ],
-  "_extensions": ["local_extensions.rest.RestTitle0Extensions"],
+  "_extensions": ["local_extensions.rest.rest_title0"],
   "_copy_without_render": [
     ".github/workflows/gh-pages.yml"
   ]

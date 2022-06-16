@@ -81,9 +81,9 @@ ABCDE
             ),
         ],
     )
-    def test_return_rest_title0(self, title, expected):
-        from local_extensions.rest import rest_title0
+    def test_return__rest_title0(self, title, expected):
+        from local_extensions.rest import _rest_title0
 
-        actual = rest_title0(title)
+        actual = _rest_title0(title)
 
         assert actual == expected
