@@ -26,6 +26,7 @@ def html_page_context(
     )
     for tag in tags:
         tag.string = parser.translate_html_string(str(tag))
+        tag.unwrap()
     context["body"] = soup.prettify(formatter=None)  # type: ignore
 
 

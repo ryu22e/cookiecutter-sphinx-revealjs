@@ -41,6 +41,25 @@ class TestSphinxBudoux:
             soup.h1.b is not None
         ), f'"{body}" should contain the b tag, but it does not.'
 
+    def test_same_tag_should_not_be_nested(self):
+        from sphinx_extensions.sphinx_budoux import html_page_context
+
+        app = MagicMock(Sphinx)
+        app.config = {
+            "budoux_target_tags": ["h1"],
+        }
+        context = {"body": "<h1>本日は晴天なり</h1>"}
+
+        html_page_context(app, "test", "test", context, MagicMock(document))
+
+        assert "body" in context.keys()
+        body = context["body"]
+        soup = BeautifulSoup(body, "html.parser")
+        assert (
+            soup.h1 is not None
+        ), f'"{body}" should contain the h1 tag, but it does not.'
+        assert soup.h1.h1 is None, "h1 tag should not be nested, but it is."
+
     def test_not_add_wbr_tags_to_titles_if_documemt_is_none(self):
         from sphinx_extensions.sphinx_budoux import html_page_context
 
