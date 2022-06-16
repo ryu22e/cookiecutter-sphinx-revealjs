@@ -16,6 +16,13 @@ exclude = [
     '{cookiecutter.project_slug}}\/source/.*$',
 ]
 
+[tool.coverage.run]
+branch = true
+source = [
+    'local_extensions',
+    '{{cookiecutter.project_slug}}/sphinx_extensions',
+]
+
 [[tool.mypy.overrides]]
 # ignore_missing_imports will no longer be needed in the next budoux of version 0.1.0.
 module = [
