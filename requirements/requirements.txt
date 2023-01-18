@@ -16,7 +16,7 @@ Sphinx==5.0.1
 alabaster==0.7.12
 arrow==1.2.2
 attrs==21.4.0
-Babel==2.10.1
+Babel==2.11.0
 binaryornot==0.4.4
 certifi==2022.12.7
 chardet==5.1.0
