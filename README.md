@@ -34,8 +34,8 @@ Choose from 1, 2 [1]:
 $ cookiecutter-sphinx-revealjs
 $ python3 -m venv .venv
 $ source .venv/bin/activate
-(.venv) $ pip install -r requirements.txt
-(.venv) $ make revealjs
-(.venv) $ ls build/revealjs
+(.venv)$ pip install -r requirements.txt
+(.venv)$ make revealjs
+(.venv)$ ls build/revealjs
 _sources    _static     favicon.ico index.html  objects.inv robots.txt
 ```
