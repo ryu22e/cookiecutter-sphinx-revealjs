@@ -39,3 +39,6 @@ $ source .venv/bin/activate
 (.venv)$ ls build/revealjs
 _sources    _static     favicon.ico index.html  objects.inv robots.txt
 ```
+
+## Setting up GitHub Pages
+![Setting up GitHub Pages](./img/setting-up-github-pages.jpg "Setting up GitHub Pages")
