@@ -12,7 +12,7 @@ pytest-flake8==1.1.1
 pytest-isort==3.1.0
 pytest-mypy==0.10.3
 pytest-randomly==3.13.0
-Sphinx==7.0.1
+Sphinx==7.1.2
 alabaster==0.7.13
 arrow==1.2.3
 attrs==23.1.0
