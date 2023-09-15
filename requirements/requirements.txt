@@ -49,7 +49,7 @@ PyYAML==6.0.1
 requests==2.31.0
 six==1.16.0
 snowballstemmer==2.2.0
-soupsieve==2.4.1
+soupsieve==2.5
 sphinxcontrib-applehelp==1.0.7
 sphinxcontrib-devhelp==1.0.5
 sphinxcontrib-htmlhelp==2.0.4
