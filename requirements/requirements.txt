@@ -62,4 +62,4 @@ tomli==2.0.1
 types-beautifulsoup4==4.12.0.6
 types-html5lib==1.1.11.15
 typing_extensions==4.7.1
-urllib3==2.0.5
+urllib3==2.0.6
