@@ -86,3 +86,12 @@ revealjs_script_conf = {
     "hash": True,
     "history": True,
 }
+revealjs_script_plugins = [
+    {
+        "name": "RevealHighlight",
+        "src": "revealjs4/plugin/highlight/highlight.js",
+    },
+]
+revealjs_css_files = [
+    "revealjs4/plugin/highlight/zenburn.css",
+]
