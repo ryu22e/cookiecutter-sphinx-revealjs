@@ -9,6 +9,7 @@
   "enable_budoux": "y",
   "enable_robots_txt": "y",
   "enable_favicon": "y",
+  "disable_title_uppercase": "n",
   "revealjs_style_theme": [
     "black",
     "white",
