@@ -20,6 +20,10 @@ if "{{ cookiecutter.enable_favicon }}" != "y":
     favicon_path = Path("source") / "favicon.ico"
     favicon_path.unlink()
 
+if "{{ cookiecutter.disable_title_uppercase }}" != "y":
+    css_path = Path("source") / "_static" / "css" / "title_uppercase.css"
+    css_path.unlink()
+
 license = "{{ cookiecutter.license }}"
 licenses_dir = Path("licenses")
 if license == "CC BY 4.0":
