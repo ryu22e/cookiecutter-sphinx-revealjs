@@ -30,3 +30,4 @@ updates:
     - dependency-name: "black"
     - dependency-name: "isort"
     - dependency-name: "mypy"
+    - dependency-name: "ruff"
