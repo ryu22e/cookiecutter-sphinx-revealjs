@@ -36,6 +36,7 @@ release = "{{ cookiecutter.release }}"
 # ones.
 extensions = [
     "sphinx_revealjs",
+    "sphinxext.opengraph",
 {%- if cookiecutter.enable_budoux == "y" %}
     "sphinx_budoux",
 {%- endif %}
@@ -101,3 +102,16 @@ revealjs_css_files = [
     "css/title_uppercase.css",
 {%- endif %}
 ]
+
+# https://github.com/wpilibsuite/sphinxext-opengraph
+ogp_site_url = "{{ cookiecutter.ogp_site_url }}"
+# https://sphinxext-opengraph.readthedocs.io/en/latest/socialcards.html
+ogp_social_cards = {
+    "enable": True,
+    "font": "Noto Sans CJK JP",
+}
+# font settings for macOS and Windows
+if sys.platform == "darwin":
+    ogp_social_cards["font"] = "Hiragino Maru Gothic Pro"
+elif sys.platform == "win32":
+    ogp_social_cards["font"] = "MS Gothic"

@@ -13,6 +13,8 @@ jobs:
 
     steps:
     - uses: actions/checkout@v4
+    - name: Japanese Font Install
+      run: sudo apt install fonts-noto-cjk
     - name: Install cookiecutter
       run: pipx install cookiecutter
     - name: Create slide
