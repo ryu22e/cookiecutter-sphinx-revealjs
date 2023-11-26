@@ -31,3 +31,72 @@ updates:
     - dependency-name: "isort"
     - dependency-name: "mypy"
     - dependency-name: "ruff"
+  groups:
+    beautifulsoup4-dependencies:
+      dependency-type: "production"
+      patterns:
+        - "beautifulsoup4"
+        - "soupsieve"
+        - "types-beautifulsoup4"
+        - "types-html5lib"
+    black-dependencies:
+      dependency-type: "production"
+      patterns:
+        - "black"
+        - "click"
+        - "mypy-extensions"
+        - "packaging"
+        - "pathspec"
+        - "platformdirs"
+    cookiecutter-dependencies:
+      dependency-type: "production"
+      patterns:
+        - "cookiecutter"
+        - "arrow"
+        - "python-dateutil"
+        - "six"
+        - "types-python-dateutil"
+        - "binaryornot"
+        - "chardet"
+        - "click"
+        - "Jinja2"
+        - "MarkupSafe"
+        - "python-slugify"
+        - "text-unidecode"
+        - "PyYAML"
+        - "requests"
+        - "certifi"
+        - "charset-normalizer"
+        - "idna"
+        - "urllib3"
+        - "rich"
+        - "markdown-it-py"
+        - "mdurl"
+        - "Pygments"
+    mypy-dependencies:
+      dependency-type: "production"
+      patterns:
+        - "mypy"
+        - "mypy-*"
+    pre-commit-dependencies:
+      dependency-type: "production"
+      patterns:
+        - "pre-commit"
+        - "cfgv"
+        - "identify"
+        - "nodeenv"
+        - "setuptools"
+        - "PyYAML"
+        - "virtualenv"
+        - "distlib"
+        - "filelock"
+        - "platformdirs"
+    pytest-dependencies:
+      dependency-type: "production"
+      patterns:
+        - "pytest"
+        - "pytest-*"
+        - "coverage"
+        - "iniconfig"
+        - "packaging"
+        - "pluggy"
