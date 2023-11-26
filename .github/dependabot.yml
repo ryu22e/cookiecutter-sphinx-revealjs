@@ -27,7 +27,6 @@ updates:
   assignees:
   - ryu22e
   ignore:
-    - dependency-name: "flake8"
     - dependency-name: "black"
     - dependency-name: "isort"
     - dependency-name: "mypy"
