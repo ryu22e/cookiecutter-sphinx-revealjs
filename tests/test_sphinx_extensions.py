@@ -18,7 +18,10 @@ class TestSphinxBudoux:
         html_page_context(app, "test", "test", context, MagicMock(document))
 
         assert "body" in context.keys()
-        assert "<wbr>" in context["body"]
+        assert (
+            context["body"]
+            == '<span style="word-break: keep-all; overflow-wrap: anywhere;"><h1>本日は\u200b晴天なり</h1></span>\n'
+        )
 
     def test_not_remove_nested_tags(self):
         from sphinx_extensions.sphinx_budoux import html_page_context
