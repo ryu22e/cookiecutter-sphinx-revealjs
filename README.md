@@ -7,7 +7,7 @@ $ cookiecutter https://github.com/ryu22e/cookiecutter-sphinx-revealjs
   [1/13] project_name (cookiecutter sphinx revealjs):
   [2/13] project_slug (cookiecutter-sphinx-revealjs):
   [3/13] title (Example):
-  [4/13] copyright_year (2023):
+  [4/13] copyright_year (2024):
   [5/13] author_name (Ryuji Tsutsui):
   [6/13] release (1.0):
   [7/13] language (ja):
