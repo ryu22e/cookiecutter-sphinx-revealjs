@@ -11,7 +11,7 @@ chardet==5.2.0
 charset-normalizer==3.3.2
 click==8.1.7
 cookiecutter==2.5.0
-coverage==7.4.1
+coverage==7.4.3
 distlib==0.3.8
 docutils==0.20.1
 filelock==3.13.1
