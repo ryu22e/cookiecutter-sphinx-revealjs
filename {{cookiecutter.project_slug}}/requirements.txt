@@ -1,5 +1,5 @@
 Sphinx==7.2.6
-sphinx-revealjs==2.9.3
+sphinx-revealjs==3.0.0
 {%- if cookiecutter.enable_budoux == "y" %}
 budoux==0.6.2
 beautifulsoup4==4.12.3
