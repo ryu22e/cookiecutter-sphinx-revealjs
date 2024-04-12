@@ -14,7 +14,7 @@ cookiecutter==2.6.0
 coverage==7.4.4
 distlib==0.3.8
 docutils==0.20.1
-filelock==3.13.3
+filelock==3.13.4
 identify==2.5.35
 idna==3.7
 imagesize==1.4.1
