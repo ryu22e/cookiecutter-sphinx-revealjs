@@ -42,7 +42,7 @@ PyYAML==6.0.1
 requests==2.31.0
 rich==13.7.1
 ruff==0.1.6
-setuptools==69.2.0
+setuptools==69.5.1
 six==1.16.0
 snowballstemmer==2.2.0
 soupsieve==2.5
@@ -59,4 +59,4 @@ types-html5lib==1.1.11.20240228
 types-python-dateutil==2.9.0.20240316
 typing_extensions==4.11.0
 urllib3==2.2.1
-virtualenv==20.25.1
+virtualenv==20.25.3
