@@ -9,10 +9,6 @@ updates:
     timezone: Asia/Tokyo
   open-pull-requests-limit: 10
   target-branch: main
-  reviewers:
-  - ryu22e
-  assignees:
-  - ryu22e
 - package-ecosystem: pip
   directory: "/requirements"
   schedule:
@@ -22,10 +18,6 @@ updates:
     timezone: Asia/Tokyo
   open-pull-requests-limit: 10
   target-branch: main
-  reviewers:
-  - ryu22e
-  assignees:
-  - ryu22e
   ignore:
     - dependency-name: "black"
     - dependency-name: "isort"
