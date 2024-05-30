@@ -92,3 +92,8 @@ updates:
         - "iniconfig"
         - "packaging"
         - "pluggy"
+    myst-parser-dependencies:
+      dependency-type: "production"
+      patterns:
+        - "myst-parser"
+        - "mdit-py-plugins"

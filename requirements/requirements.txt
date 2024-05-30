@@ -23,9 +23,11 @@ isort==5.12.0
 Jinja2==3.1.4
 markdown-it-py==3.0.0
 MarkupSafe==2.1.5
+mdit-py-plugins==0.4.1
 mdurl==0.1.2
 mypy==0.950
 mypy-extensions==1.0.0
+myst-parser==3.0.1
 nodeenv==1.9.0
 packaging==24.0
 pathspec==0.12.1

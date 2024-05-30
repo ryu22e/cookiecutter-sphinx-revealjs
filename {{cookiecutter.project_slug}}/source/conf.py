@@ -39,6 +39,9 @@ extensions = [
 {%- if cookiecutter.enable_budoux == "y" %}
     "sphinx_budoux",
 {%- endif %}
+{%- if cookiecutter.style == "Markdown" %}
+    "myst_parser",
+{%- endif %}
 ]
 {%- if cookiecutter.enable_budoux == "y" %}
 budoux_target_tags = ["h1", "h2", "h3", "p"]
