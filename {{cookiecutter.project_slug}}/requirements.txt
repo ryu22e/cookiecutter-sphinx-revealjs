@@ -4,3 +4,6 @@ sphinx-revealjs==3.0.0
 budoux==0.6.2
 beautifulsoup4==4.12.3
 {%- endif %}
+{%- if cookiecutter.style == "Markdown" %}
+myst-parser==3.0.1
+{%- endif %}

@@ -10,6 +10,10 @@
   "enable_robots_txt": "y",
   "enable_favicon": "y",
   "disable_title_uppercase": "n",
+  "style": [
+      "reStructuredText",
+      "Markdown"
+  ],
   "revealjs_style_theme": [
     "black",
     "white",

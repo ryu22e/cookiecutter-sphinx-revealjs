@@ -24,6 +24,13 @@ if "{{ cookiecutter.disable_title_uppercase }}" != "y":
     css_path = Path("source") / "_static" / "css" / "title_uppercase.css"
     css_path.unlink()
 
+if "{{ cookiecutter.style }}" == "reStructuredText":
+    md_path = Path("source") / "index.md"
+    md_path.unlink()
+elif "{{ cookiecutter.style }}" == "Markdown":
+    rst_path = Path("source") / "index.rst"
+    rst_path.unlink()
+
 license = "{{ cookiecutter.license }}"
 licenses_dir = Path("licenses")
 if license == "CC BY 4.0":
