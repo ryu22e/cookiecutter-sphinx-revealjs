@@ -1,0 +1,22 @@
+{
+  "cookiecutter": {
+    "project_name": "cookiecutter sphinx revealjs",
+    "project_slug": "cookiecutter-sphinx-revealjs",
+    "title": "Example",
+    "copyright_year": "2024",
+    "author_name": "Ryuji Tsutsui",
+    "release": "1.0",
+    "language": "en",
+    "enable_budoux": "y",
+    "enable_robots_txt": "y",
+    "enable_favicon": "y",
+    "disable_title_uppercase": "n",
+    "style": "Markdown",
+    "revealjs_style_theme": "black",
+    "license": "CC BY 4.0",
+    "_extensions": ["local_extensions.rest.rest_title0"],
+    "_copy_without_render": [
+      ".github/workflows/static.yml"
+    ]
+  }
+}
