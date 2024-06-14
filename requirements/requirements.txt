@@ -29,7 +29,7 @@ mypy==0.950
 mypy-extensions==1.0.0
 myst-parser==3.0.1
 nodeenv==1.9.1
-packaging==24.0
+packaging==24.1
 pathspec==0.12.1
 platformdirs==4.2.2
 pluggy==1.5.0
