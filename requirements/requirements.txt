@@ -49,7 +49,7 @@ six==1.16.0
 snowballstemmer==2.2.0
 soupsieve==2.5
 Sphinx==7.4.7
-sphinxcontrib-applehelp==1.0.8
+sphinxcontrib-applehelp==2.0.0
 sphinxcontrib-devhelp==2.0.0
 sphinxcontrib-htmlhelp==2.0.6
 sphinxcontrib-jsmath==1.0.1
