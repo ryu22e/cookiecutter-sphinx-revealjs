@@ -27,9 +27,13 @@ if "{{ cookiecutter.disable_title_uppercase }}" != "y":
 if "{{ cookiecutter.style }}" == "reStructuredText":
     md_path = Path("source") / "index.md"
     md_path.unlink()
+    readme_path = Path("README.md")
+    readme_path.unlink()
 elif "{{ cookiecutter.style }}" == "Markdown":
     rst_path = Path("source") / "index.rst"
     rst_path.unlink()
+    readme_path = Path("README.rst")
+    readme_path.unlink()
 
 license = "{{ cookiecutter.license }}"
 licenses_dir = Path("licenses")
