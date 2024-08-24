@@ -27,7 +27,7 @@ mdit-py-plugins==0.4.1
 mdurl==0.1.2
 mypy==0.950
 mypy-extensions==1.0.0
-myst-parser==3.0.1
+myst-parser==4.0.0
 nodeenv==1.9.1
 packaging==24.1
 pathspec==0.12.1
@@ -48,7 +48,7 @@ setuptools==73.0.1
 six==1.16.0
 snowballstemmer==2.2.0
 soupsieve==2.6
-Sphinx==7.4.7
+Sphinx==8.0.2
 sphinxcontrib-applehelp==2.0.0
 sphinxcontrib-devhelp==2.0.0
 sphinxcontrib-htmlhelp==2.1.0
