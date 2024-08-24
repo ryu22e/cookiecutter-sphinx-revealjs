@@ -32,7 +32,7 @@ updates:
         - "types-beautifulsoup4"
         - "types-html5lib"
     black-dependencies:
-      dependency-type: "production"
+      dependency-type: "development"
       patterns:
         - "black"
         - "click"
@@ -66,7 +66,7 @@ updates:
         - "mdurl"
         - "Pygments"
     mypy-dependencies:
-      dependency-type: "production"
+      dependency-type: "development"
       patterns:
         - "mypy"
         - "mypy-*"
@@ -84,7 +84,7 @@ updates:
         - "filelock"
         - "platformdirs"
     pytest-dependencies:
-      dependency-type: "production"
+      dependency-type: "development"
       patterns:
         - "pytest"
         - "pytest-*"
@@ -97,3 +97,32 @@ updates:
       patterns:
         - "myst-parser"
         - "mdit-py-plugins"
+        - "docutils"
+        - "Jinja2"
+        - "MarkupSafe"
+        - "markdown-it-py"
+        - "mdurl"
+        - "mdit-py-plugins"
+        - "markdown-it-py"
+        - "mdurl"
+        - "PyYAML"
+        - "Sphinx"
+    sphinx-dependencies:
+      dependency-type: "production"
+      patterns:
+        - "Sphinx"
+        - "alabaster"
+        - "babel"
+        - "docutils"
+        - "imagesize"
+        - "Jinja2"
+        - "MarkupSafe"
+        - "packaging"
+        - "Pygments"
+        - "requests"
+        - "certifi"
+        - "charset-normalizer"
+        - "idna"
+        - "urllib3"
+        - "snowballstemmer"
+        - "sphinxcontrib-*"
