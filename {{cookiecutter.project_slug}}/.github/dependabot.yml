@@ -12,3 +12,10 @@ updates:
     interval: "weekly"
     day: "saturday"
   open-pull-requests-limit: 10
+  groups:
+    sphinx-dependencies:
+      dependency-type: "production"
+      patterns:
+        - "sphinx"
+        - "sphinx-*"
+        - "myst-parser"
