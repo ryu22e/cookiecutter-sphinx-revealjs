@@ -71,7 +71,7 @@ updates:
         - "mypy"
         - "mypy-*"
     pre-commit-dependencies:
-      dependency-type: "production"
+      dependency-type: "development"
       patterns:
         - "pre-commit"
         - "cfgv"
