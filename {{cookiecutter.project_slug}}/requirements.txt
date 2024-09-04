@@ -1,9 +1,9 @@
-Sphinx==7.4.7
+Sphinx==8.0.2
 sphinx-revealjs==3.0.3
 {%- if cookiecutter.enable_budoux == "y" %}
 budoux==0.6.2
 beautifulsoup4==4.12.3
 {%- endif %}
 {%- if cookiecutter.style == "Markdown" %}
-myst-parser==3.0.1
+myst-parser==4.0.0
 {%- endif %}
