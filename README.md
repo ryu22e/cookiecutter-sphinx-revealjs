@@ -1,7 +1,17 @@
 # cookiecutter-sphinx-revealjs
+
 Cookiecutter Template for sphinx-revealjs.
 
+You can easily create presentation slides to publish on GitHub Pages.
+
+This is recommended for people who:
+
+* Want to create slides using their preferred text editor
+* Are familiar with reStructuredText or Markdown
+* Have experience using Sphinx
+
 ## Usage
+
 ```shell
 $ cookiecutter https://github.com/ryu22e/cookiecutter-sphinx-revealjs
   [1/16] project_name (cookiecutter sphinx revealjs):
@@ -54,4 +64,5 @@ _sources    _static     favicon.ico index.html  objects.inv robots.txt
 ```
 
 ## Setting up GitHub Pages
+
 ![Setting up GitHub Pages](./img/setting-up-github-pages.jpg "Setting up GitHub Pages")
