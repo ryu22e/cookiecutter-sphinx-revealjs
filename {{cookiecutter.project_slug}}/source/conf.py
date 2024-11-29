@@ -36,6 +36,8 @@ release = "{{ cookiecutter.release }}"
 # ones.
 extensions = [
     "sphinx_revealjs",
+    "sphinx_revealjs.ext.screenshot",
+    "sphinxext.opengraph",
 {%- if cookiecutter.enable_budoux == "y" %}
     "sphinx_budoux",
 {%- endif %}
@@ -104,3 +106,7 @@ revealjs_css_files = [
     "css/title_uppercase.css",
 {%- endif %}
 ]
+
+# OGP
+ogp_site_url = "{{ cookiecutter.site_url }}"
+ogp_image = f"{ogp_site_url.removesuffix('/')}/_images/ogp/index.png"

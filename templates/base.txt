@@ -1,2 +1,3 @@
 Sphinx==8.1.3
-sphinx-revealjs==3.0.5
+sphinx-revealjs[screenshot]==3.0.5
+sphinxext.opengraph==0.9.1

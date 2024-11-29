@@ -34,4 +34,5 @@ jobs:
       run: |
         cd .work/slide/cookiecutter-sphinx-revealjs
         pip install -r requirements.txt
+        playwright install --with-deps chromium
         make revealjs
