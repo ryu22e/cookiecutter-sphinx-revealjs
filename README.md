@@ -43,6 +43,7 @@ $ cd cookiecutter-sphinx-revealjs
     1 - CC BY 4.0
     2 - None
     Choose from [1/2] (1):
+$ cd cookiecutter-sphinx-revealjs
 $ python3 -m venv .venv
 $ source .venv/bin/activate
 (.venv)$ pip install -r requirements.txt
