@@ -2,6 +2,7 @@
   "cookiecutter": {
     "project_name": "cookiecutter sphinx revealjs",
     "python_version": "3.13",
+    "site_url": "https://example.com",
     "project_slug": "cookiecutter-sphinx-revealjs",
     "title": "Example",
     "copyright_year": "2024",

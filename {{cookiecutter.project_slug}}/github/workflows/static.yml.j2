@@ -39,6 +39,8 @@ jobs:
           python-version: "{{ cookiecutter.python_version }}"
       - name: Install dependencies
         run: pip install -r ./requirements.txt
+      - name: playwright install
+        run: playwright install --with-deps chromium
       - run: make revealjs
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
