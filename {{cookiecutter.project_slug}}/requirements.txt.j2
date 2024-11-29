@@ -1,9 +1,7 @@
-Sphinx==8.1.3
-sphinx-revealjs==3.0.5
+{% extends "base.txt" %}
 {%- if cookiecutter.enable_budoux == "y" %}
-budoux==0.6.3
-beautifulsoup4==4.12.3
+{% include "budoux.txt" %}
 {%- endif %}
 {%- if cookiecutter.style == "Markdown" %}
-myst-parser==4.0.0
+{% include "markdown.txt" %}
 {%- endif %}
