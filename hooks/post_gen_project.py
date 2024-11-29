@@ -3,6 +3,8 @@ from pathlib import Path
 
 github = Path("github")
 github.rename(".github")
+static_yml_j2 = Path(".github") / "workflows" / "static.yml.j2"
+static_yml_j2.rename(".github/workflows/static.yml")
 
 sphinx_extensions_dir = Path("sphinx_extensions")
 if "{{ cookiecutter.enable_budoux }}" == "y":
