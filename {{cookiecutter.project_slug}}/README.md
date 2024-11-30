@@ -12,7 +12,7 @@ $ cd {repository path}
 $ python -m venv .venv
 $ source .venv/bin/activate
 (.venv)$ pip install -r requirements_dev.txt
-(.venv)$ playwright install --with-deps chromium
+(.venv)$ playwright install --with-deps chromium  # Run only once initially
 (.venv)$ vim source/index.md  # Replace vim with your favorite editor
 (.venv)$ make revealjs  # Build to build/revealjs/
 ```
