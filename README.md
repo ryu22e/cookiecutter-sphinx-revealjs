@@ -57,7 +57,7 @@ $ cd cookiecutter-sphinx-revealjs
 $ python3 -m venv .venv
 $ source .venv/bin/activate
 (.venv)$ pip install -r requirements.txt
-(.venv)$ playwright install --with-deps chromium
+(.venv)$ playwright install --with-deps chromium  # Run only once initially
 (.venv)$ make revealjs
 (.venv)$ ls build/revealjs
 _sources    _static     favicon.ico index.html  objects.inv robots.txt
