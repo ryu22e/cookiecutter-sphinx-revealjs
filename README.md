@@ -13,7 +13,7 @@ This is recommended for people who:
 ## Usage
 
 ```shell
-$ cookiecutter https://github.com/ryu22e/cookiecutter-sphinx-revealjs
+$ cookiecutter gh:ryu22e/cookiecutter-sphinx-revealjs
   [1/16] project_name (cookiecutter sphinx revealjs):
   [2/16] project_slug (cookiecutter-sphinx-revealjs):
   [3/16] title (Example):
