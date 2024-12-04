@@ -5,3 +5,6 @@
 {%- if cookiecutter.style == "Markdown" %}
 {% include "markdown.txt" %}
 {%- endif %}
+{%- if cookiecutter.enable_embed_video == "y" %}
+{% include "video.txt" %}
+{%- endif %}
