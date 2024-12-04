@@ -41,6 +41,9 @@ extensions = [
 {%- if cookiecutter.enable_budoux == "y" %}
     "sphinx_budoux",
 {%- endif %}
+{%- if cookiecutter.enable_embed_video == "y" %}
+    "sphinxcontrib.video",
+{%- endif %}
 {%- if cookiecutter.style == "Markdown" %}
     "myst_parser",
 {%- endif %}

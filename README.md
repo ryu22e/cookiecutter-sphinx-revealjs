@@ -14,29 +14,30 @@ This is recommended for people who:
 
 ```shell
 $ cookiecutter gh:ryu22e/cookiecutter-sphinx-revealjs
-  [1/16] project_name (cookiecutter sphinx revealjs):
-  [2/16] project_slug (cookiecutter-sphinx-revealjs):
-  [3/16] title (Example):
-  [4/16] Select python_version
+  [1/17] project_name (cookiecutter sphinx revealjs):
+  [2/17] project_slug (cookiecutter-sphinx-revealjs):
+  [3/17] title (Example):
+  [4/17] Select python_version
     1 - 3.13
     2 - 3.12
     3 - 3.11
     4 - 3.10
     Choose from [1/2/3/4] (1):
-  [5/16] site_url (https://example.com):
-  [6/16] copyright_year (2024):
-  [7/16] author_name (Ryuji Tsutsui):
-  [8/16] release (1.0):
-  [9/16] language (ja):
-  [10/16] enable_budoux (y):
-  [11/16] enable_robots_txt (y):
-  [12/16] enable_favicon (y):
-  [13/16] disable_title_uppercase (n):
-  [14/16] Select style
+  [5/17] site_url (https://example.com):
+  [6/17] copyright_year (2024):
+  [7/17] author_name (Ryuji Tsutsui):
+  [8/17] release (1.0):
+  [9/17] language (ja):
+  [10/17] enable_budoux (y):
+  [11/17] enable_robots_txt (y):
+  [12/17] enable_favicon (y):
+  [13/17] disable_title_uppercase (n):
+  [14/17] enable_embed_video (n):
+  [15/17] Select style
     1 - reStructuredText
     2 - Markdown
     Choose from [1/2] (1):
-  [15/16] Select revealjs_style_theme
+  [16/17] Select revealjs_style_theme
     1 - black
     2 - white
     3 - league
@@ -49,7 +50,7 @@ $ cookiecutter gh:ryu22e/cookiecutter-sphinx-revealjs
     10 - blood
     11 - moon
     Choose from [1/2/3/4/5/6/7/8/9/10/11] (1):
-  [16/16] Select license
+  [17/17] Select license
     1 - CC BY 4.0
     2 - None
     Choose from [1/2] (1):

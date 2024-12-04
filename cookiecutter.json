@@ -17,6 +17,7 @@
   "enable_robots_txt": "y",
   "enable_favicon": "y",
   "disable_title_uppercase": "n",
+  "enable_embed_video": "n",
   "style": [
       "reStructuredText",
       "Markdown"
