@@ -4,6 +4,9 @@ from pathlib import Path
 requirements_txt_j2 = Path("requirements.txt.j2")
 requirements_txt_j2.rename("requirements.txt")
 
+requirements_dev_txt_j2 = Path("requirements_dev.txt.j2")
+requirements_dev_txt_j2.rename("requirements_dev.txt")
+
 static_yml_j2 = Path(".github") / "workflows" / "static.yml.j2"
 static_yml_j2.rename(".github/workflows/static.yml")
 
