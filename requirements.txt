@@ -4,7 +4,7 @@ Babel==2.16.0
 beautifulsoup4==4.12.3
 binaryornot==0.4.4
 black==24.3.0
-budoux==0.6.3
+budoux==0.6.4
 certifi==2024.8.30
 cfgv==3.4.0
 chardet==5.2.0
