@@ -26,7 +26,7 @@ MarkupSafe==3.0.2
 mdit-py-plugins==0.4.2
 mdurl==0.1.2
 mypy==0.950
-mypy-extensions==1.0.0
+mypy-extensions==1.1.0
 myst-parser==4.0.0
 nodeenv==1.9.1
 packaging==25.0
