@@ -5,7 +5,7 @@ beautifulsoup4==4.13.4
 binaryornot==0.4.4
 black==24.3.0
 budoux==0.7.0
-certifi==2025.4.26
+certifi==2025.6.15
 cfgv==3.4.0
 chardet==5.2.0
 charset-normalizer==3.4.2
@@ -34,7 +34,7 @@ pathspec==0.12.1
 platformdirs==4.3.8
 pluggy==1.6.0
 pre-commit==4.2.0
-Pygments==2.19.1
+Pygments==2.19.2
 pytest==8.4.1
 pytest-cov==6.1.1
 pytest-randomly==3.16.0
