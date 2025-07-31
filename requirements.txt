@@ -61,4 +61,4 @@ types-html5lib==1.1.11.20250708
 types-python-dateutil==2.9.0.20250516
 typing_extensions==4.14.0
 urllib3==2.5.0
-virtualenv==20.31.2
+virtualenv==20.32.0
