@@ -24,7 +24,7 @@ $ cookiecutter gh:ryu22e/cookiecutter-sphinx-revealjs
     4 - 3.10
     Choose from [1/2/3/4] (1):
   [5/17] site_url (https://example.com):
-  [6/17] copyright_year (2024):
+  [6/17] copyright_year (2025):
   [7/17] author_name (Ryuji Tsutsui):
   [8/17] release (1.0):
   [9/17] language (ja):
