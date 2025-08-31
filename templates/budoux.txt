@@ -1,2 +1,2 @@
 budoux==0.7.0
-beautifulsoup4==4.13.4
+beautifulsoup4==4.13.5
