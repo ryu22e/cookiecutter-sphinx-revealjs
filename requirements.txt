@@ -31,7 +31,7 @@ myst-parser==4.0.0
 nodeenv==1.10.0
 packaging==25.0
 pathspec==0.12.1
-platformdirs==4.5.0
+platformdirs==4.5.1
 pluggy==1.6.0
 pre-commit==4.5.0
 Pygments==2.19.2
