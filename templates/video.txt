@@ -1,1 +1,1 @@
-sphinxcontrib-video==0.4.1
+sphinxcontrib-video==0.4.2
