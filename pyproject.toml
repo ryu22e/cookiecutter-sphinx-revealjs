@@ -1,41 +1,29 @@
 [tool.pytest.ini_options]
 minversion = 7.0
 addopts = "-q --cov --cov-report=xml --ignore-glob={{cookiecutter.project_slug}}/source/*"
-testpaths = [
-    "tests",
-]
-
-[tool.black]
-exclude = "({{cookiecutter.project_slug}}/source/)"
+testpaths = ["tests"]
 
 [tool.isort]
 profile = "black"
 skip_glob = "{{cookiecutter.project_slug}}/source/*"
 
 [tool.mypy]
-exclude = [
-    "^{{cookiecutter.project_slug}}/source/.*$",
-]
+exclude = ["^{{cookiecutter.project_slug}}/source/.*$"]
 
 [tool.coverage.run]
 branch = true
-source = [
-    "local_extensions",
-    "{{cookiecutter.project_slug}}/sphinx_extensions",
-]
+source = ["local_extensions", "{{cookiecutter.project_slug}}/sphinx_extensions"]
 
 [[tool.mypy.overrides]]
-module = [
-    "cookiecutter.*",
-]
+module = ["cookiecutter.*"]
 ignore_missing_imports = true
 
 [tool.ruff]
 line-length = 95
-show-source = true
 exclude = [
     ".git",
     ".venv",
     ".direnv",
     '\{\{cookiecutter.project_slug\}\}/source/',
 ]
+select = ["I"]
