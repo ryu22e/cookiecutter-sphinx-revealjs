@@ -1,4 +1,5 @@
 """Sphinx Extension for automatic formatting."""
+
 from __future__ import annotations
 
 import itertools
