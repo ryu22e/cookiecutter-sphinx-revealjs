@@ -18,11 +18,12 @@ $ cookiecutter gh:ryu22e/cookiecutter-sphinx-revealjs
   [2/17] project_slug (cookiecutter-sphinx-revealjs):
   [3/17] title (Example):
   [4/17] Select python_version
-    1 - 3.13
-    2 - 3.12
-    3 - 3.11
-    4 - 3.10
-    Choose from [1/2/3/4] (1):
+    1 - 3.14
+    2 - 3.13
+    3 - 3.12
+    4 - 3.11
+    5 - 3.10
+    Choose from [1/2/3/4/5] (1):
   [5/17] site_url (https://example.com):
   [6/17] copyright_year (2026):
   [7/17] author_name (Ryuji Tsutsui):
