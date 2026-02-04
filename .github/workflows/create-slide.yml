@@ -1,38 +1,30 @@
 name: Create slide
-
 on:
   push:
     branches: ['main']
   pull_request:
-
 jobs:
   build:
-
     runs-on: ubuntu-latest
-
     strategy:
       matrix:
-        python-version: [ '3.12', '3.13', '3.14' ]
-        replay-file-path: [
-          './replay-files/reStructuredText.json',
-          './replay-files/Markdown.json'
-        ]
-
+        python-version: ['3.12', '3.13', '3.14']
+        replay-file-path: ['./replay-files/reStructuredText.json', './replay-files/Markdown.json']
     steps:
-    - uses: actions/checkout@de0fac2e4500dabe0009e67214ff5f5447ce83dd # v6.0.2
-    - name: Install cookiecutter
-      run: pipx install cookiecutter
-    - name: Create slide
-      run: PYTHONPATH=${PWD} cookiecutter . --replay-file=${{ matrix.replay-file-path }} -o .work/slide
-    - name: Set up Python
-      uses: actions/setup-python@a309ff8b426b58ec0e2a45f0f869d46889d02405 # v6.2.0
-      with:
-        python-version: ${{ matrix.python-version }}
-        cache: 'pip'
-        cache-dependency-path: '**/requirements.txt'
-    - name: Build sphinx-revealjs
-      run: |
-        cd .work/slide/cookiecutter-sphinx-revealjs
-        pip install -r requirements.txt
-        playwright install --with-deps chromium
-        make revealjs
+      - uses: actions/checkout@de0fac2e4500dabe0009e67214ff5f5447ce83dd # v6.0.2
+      - name: Install cookiecutter
+        run: pipx install cookiecutter
+      - name: Create slide
+        run: PYTHONPATH=${PWD} cookiecutter . --replay-file=${{ matrix.replay-file-path }} -o .work/slide
+      - name: Set up Python
+        uses: actions/setup-python@a309ff8b426b58ec0e2a45f0f869d46889d02405 # v6.2.0
+        with:
+          python-version: ${{ matrix.python-version }}
+          cache: 'pip'
+          cache-dependency-path: '**/requirements.txt'
+      - name: Build sphinx-revealjs
+        run: |
+          cd .work/slide/cookiecutter-sphinx-revealjs
+          pip install -r requirements.txt
+          playwright install --with-deps chromium
+          make revealjs
