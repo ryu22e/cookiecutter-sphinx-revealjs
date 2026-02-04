@@ -1,130 +1,130 @@
 version: 2
 updates:
-- package-ecosystem: "github-actions"
-  directory: "/"
-  schedule:
-    interval: "monthly"
-    time: "08:00"
-    timezone: Asia/Tokyo
-  open-pull-requests-limit: 10
-  target-branch: main
-- package-ecosystem: pip
-  directory: "/"
-  schedule:
-    interval: "monthly"
-    time: "08:00"
-    timezone: Asia/Tokyo
-  open-pull-requests-limit: 10
-  target-branch: main
-  ignore:
-    - dependency-name: "mypy"
-    - dependency-name: "ruff"
-  groups:
-    beautifulsoup4-dependencies:
-      dependency-type: "production"
-      patterns:
-        - "beautifulsoup4"
-        - "soupsieve"
-        - "types-beautifulsoup4"
-        - "types-html5lib"
-    cookiecutter-dependencies:
-      dependency-type: "production"
-      patterns:
-        - "cookiecutter"
-        - "arrow"
-        - "python-dateutil"
-        - "six"
-        - "types-python-dateutil"
-        - "binaryornot"
-        - "chardet"
-        - "click"
-        - "Jinja2"
-        - "MarkupSafe"
-        - "python-slugify"
-        - "text-unidecode"
-        - "PyYAML"
-        - "requests"
-        - "certifi"
-        - "charset-normalizer"
-        - "idna"
-        - "urllib3"
-        - "rich"
-        - "markdown-it-py"
-        - "mdurl"
-        - "Pygments"
-    mypy-dependencies:
-      dependency-type: "development"
-      patterns:
-        - "mypy"
-        - "mypy-*"
-    pre-commit-dependencies:
-      dependency-type: "development"
-      patterns:
-        - "pre-commit"
-        - "cfgv"
-        - "identify"
-        - "nodeenv"
-        - "setuptools"
-        - "PyYAML"
-        - "virtualenv"
-        - "distlib"
-        - "filelock"
-        - "platformdirs"
-    pytest-dependencies:
-      dependency-type: "development"
-      patterns:
-        - "pytest"
-        - "pytest-*"
-        - "coverage"
-        - "iniconfig"
-        - "packaging"
-        - "pluggy"
-    myst-parser-dependencies:
-      dependency-type: "production"
-      patterns:
-        - "myst-parser"
-        - "mdit-py-plugins"
-        - "docutils"
-        - "Jinja2"
-        - "MarkupSafe"
-        - "markdown-it-py"
-        - "mdurl"
-        - "mdit-py-plugins"
-        - "markdown-it-py"
-        - "mdurl"
-        - "PyYAML"
-        - "Sphinx"
-        - "alabaster"
-        - "babel"
-        - "docutils"
-        - "imagesize"
-        - "Jinja2"
-        - "MarkupSafe"
-        - "packaging"
-        - "Pygments"
-        - "requests"
-        - "certifi"
-        - "charset-normalizer"
-        - "idna"
-        - "urllib3"
-        - "snowballstemmer"
-        - "sphinxcontrib-*"
-    sphinx-dependencies:
-      dependency-type: "production"
-      patterns:
-        - "Sphinx"
-        - "alabaster"
-        - "babel"
-        - "docutils"
-        - "imagesize"
-        - "Jinja2"
-        - "MarkupSafe"
-        - "packaging"
-        - "Pygments"
-        - "requests"
-        - "certifi"
-        - "charset-normalizer"
-        - "idna"
-        - "urllib3"
-        - "snowballstemmer"
-        - "sphinxcontrib-*"
+  - package-ecosystem: "github-actions"
+    directory: "/"
+    schedule:
+      interval: "monthly"
+      time: "08:00"
+      timezone: Asia/Tokyo
+    open-pull-requests-limit: 10
+    target-branch: main
+  - package-ecosystem: pip
+    directory: "/"
+    schedule:
+      interval: "monthly"
+      time: "08:00"
+      timezone: Asia/Tokyo
+    open-pull-requests-limit: 10
+    target-branch: main
+    ignore:
+      - dependency-name: "mypy"
+      - dependency-name: "ruff"
+    groups:
+      beautifulsoup4-dependencies:
+        dependency-type: "production"
+        patterns:
+          - "beautifulsoup4"
+          - "soupsieve"
+          - "types-beautifulsoup4"
+          - "types-html5lib"
+      cookiecutter-dependencies:
+        dependency-type: "production"
+        patterns:
+          - "cookiecutter"
+          - "arrow"
+          - "python-dateutil"
+          - "six"
+          - "types-python-dateutil"
+          - "binaryornot"
+          - "chardet"
+          - "click"
+          - "Jinja2"
+          - "MarkupSafe"
+          - "python-slugify"
+          - "text-unidecode"
+          - "PyYAML"
+          - "requests"
+          - "certifi"
+          - "charset-normalizer"
+          - "idna"
+          - "urllib3"
+          - "rich"
+          - "markdown-it-py"
+          - "mdurl"
+          - "Pygments"
+      mypy-dependencies:
+        dependency-type: "development"
+        patterns:
+          - "mypy"
+          - "mypy-*"
+      pre-commit-dependencies:
+        dependency-type: "development"
+        patterns:
+          - "pre-commit"
+          - "cfgv"
+          - "identify"
+          - "nodeenv"
+          - "setuptools"
+          - "PyYAML"
+          - "virtualenv"
+          - "distlib"
+          - "filelock"
+          - "platformdirs"
+      pytest-dependencies:
+        dependency-type: "development"
+        patterns:
+          - "pytest"
+          - "pytest-*"
+          - "coverage"
+          - "iniconfig"
+          - "packaging"
+          - "pluggy"
+      myst-parser-dependencies:
+        dependency-type: "production"
+        patterns:
+          - "myst-parser"
+          - "mdit-py-plugins"
+          - "docutils"
+          - "Jinja2"
+          - "MarkupSafe"
+          - "markdown-it-py"
+          - "mdurl"
+          - "mdit-py-plugins"
+          - "markdown-it-py"
+          - "mdurl"
+          - "PyYAML"
+          - "Sphinx"
+          - "alabaster"
+          - "babel"
+          - "docutils"
+          - "imagesize"
+          - "Jinja2"
+          - "MarkupSafe"
+          - "packaging"
+          - "Pygments"
+          - "requests"
+          - "certifi"
+          - "charset-normalizer"
+          - "idna"
+          - "urllib3"
+          - "snowballstemmer"
+          - "sphinxcontrib-*"
+      sphinx-dependencies:
+        dependency-type: "production"
+        patterns:
+          - "Sphinx"
+          - "alabaster"
+          - "babel"
+          - "docutils"
+          - "imagesize"
+          - "Jinja2"
+          - "MarkupSafe"
+          - "packaging"
+          - "Pygments"
+          - "requests"
+          - "certifi"
+          - "charset-normalizer"
+          - "idna"
+          - "urllib3"
+          - "snowballstemmer"
+          - "sphinxcontrib-*"
