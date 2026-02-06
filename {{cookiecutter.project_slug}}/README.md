@@ -2,7 +2,7 @@
 
 ## Requirements
 * Git
-* Python 3.10 or higher
+* Python 3.12 or higher
 * Your favorite editor
 
 ## How to Build

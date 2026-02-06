@@ -5,9 +5,7 @@
   "python_version": [
       "3.14",
       "3.13",
-      "3.12",
-      "3.11",
-      "3.10"
+      "3.12"
   ],
   "site_url": "https://example.com",
   "copyright_year": "2026",
