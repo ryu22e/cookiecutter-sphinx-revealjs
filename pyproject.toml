@@ -3,10 +3,6 @@ minversion = 7.0
 addopts = "-q --cov --cov-report=xml --ignore-glob={{cookiecutter.project_slug}}/source/*"
 testpaths = ["tests"]
 
-[tool.isort]
-profile = "black"
-skip_glob = "{{cookiecutter.project_slug}}/source/*"
-
 [tool.pyrefly]
 project-excludes = ["{{cookiecutter.project_slug}}/source"]
 search-path = ["{{cookiecutter.project_slug}}"]
