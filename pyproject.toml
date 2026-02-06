@@ -7,16 +7,13 @@ testpaths = ["tests"]
 profile = "black"
 skip_glob = "{{cookiecutter.project_slug}}/source/*"
 
-[tool.mypy]
-exclude = ["^{{cookiecutter.project_slug}}/source/.*$"]
+[tool.pyrefly]
+project-excludes = ["{{cookiecutter.project_slug}}/source"]
+search-path = ["{{cookiecutter.project_slug}}"]
 
 [tool.coverage.run]
 branch = true
 source = ["local_extensions", "{{cookiecutter.project_slug}}/sphinx_extensions"]
-
-[[tool.mypy.overrides]]
-module = ["cookiecutter.*"]
-ignore_missing_imports = true
 
 [tool.ruff]
 line-length = 95

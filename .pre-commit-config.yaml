@@ -9,12 +9,13 @@ repos:
       - id: check-yaml
       - id: check-toml
       - id: check-added-large-files
-  - repo: https://github.com/pre-commit/mirrors-mypy
-    rev: v1.19.1
+  - repo: https://github.com/facebook/pyrefly-pre-commit
+    rev: 0.51.0
     hooks:
-      - id: mypy
-        exclude: ^{{cookiecutter.project_slug}}\/source/
-        additional_dependencies: ["types-beautifulsoup4"]
+      - id: pyrefly-check
+        name: Pyrefly (type checking)
+        pass_filenames: false
+        language: system
   - repo: https://github.com/astral-sh/ruff-pre-commit
     rev: v0.15.0
     hooks:
