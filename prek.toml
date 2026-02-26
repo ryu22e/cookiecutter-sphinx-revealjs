@@ -1,0 +1,36 @@
+# Configuration file for `prek`, a git hook framework written in Rust.
+# See https://prek.j178.dev for more information.
+#:schema https://www.schemastore.org/prek.json
+
+[[repos]]
+repo = "https://github.com/pre-commit/pre-commit-hooks"
+rev = "v6.0.0"
+hooks = [
+  { id = "trailing-whitespace" },
+  { id = "end-of-file-fixer" },
+  { id = "check-yaml" },
+  { id = "check-toml" },
+  { id = "check-added-large-files" }
+]
+
+[[repos]]
+repo = "https://github.com/facebook/pyrefly-pre-commit"
+rev = "0.51.0"
+hooks = [
+  { id = "pyrefly-check", name = "Pyrefly (type checking)", pass_filenames = false, language = "system" }
+]
+
+[[repos]]
+repo = "https://github.com/astral-sh/ruff-pre-commit"
+rev = "v0.15.0"
+hooks = [
+  { id = "ruff-check", args = ["--fix"] },
+  { id = "ruff-format" }
+]
+
+[[repos]]
+repo = "https://github.com/google/yamlfmt"
+rev = "v0.19.0"
+hooks = [
+  { id = "yamlfmt" }
+]
