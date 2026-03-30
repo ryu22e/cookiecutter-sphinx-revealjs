@@ -25,7 +25,7 @@ packaging==26.0
 pipdeptree==2.31.0
 pluggy==1.6.0
 prek==0.3.4
-Pygments==2.19.2
+Pygments==2.20.0
 pyrefly==0.54.0
 pytest==9.0.2
 pytest-cov==7.0.0
