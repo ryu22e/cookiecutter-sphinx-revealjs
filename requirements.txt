@@ -26,7 +26,7 @@ pipdeptree==2.34.0
 pluggy==1.6.0
 prek==0.3.8
 Pygments==2.20.0
-pyrefly==0.54.0
+pyrefly==0.59.0
 pytest==9.0.3
 pytest-cov==7.1.0
 pytest-randomly==4.0.1
