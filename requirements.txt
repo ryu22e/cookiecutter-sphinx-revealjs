@@ -28,7 +28,7 @@ prek==0.3.8
 Pygments==2.20.0
 pyrefly==0.54.0
 pytest==9.0.3
-pytest-cov==7.0.0
+pytest-cov==7.1.0
 pytest-randomly==4.0.1
 python-dateutil==2.9.0.post0
 python-slugify==8.0.4
