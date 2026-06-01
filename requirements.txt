@@ -54,5 +54,5 @@ types-html5lib==1.1.11.20260408
 types-python-dateutil==2.9.0.20260408
 types-webencodings==0.5.0.20260408
 typing_extensions==4.15.0
-tzdata==2025.3
+tzdata==2026.2
 urllib3==2.7.0
