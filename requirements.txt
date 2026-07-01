@@ -9,7 +9,7 @@ chardet==7.4.3
 charset-normalizer==3.4.7
 click==8.4.1
 cookiecutter==2.7.1
-coverage==7.13.5
+coverage==7.14.1
 docutils==0.22.4
 idna==3.17
 imagesize==2.0.0
