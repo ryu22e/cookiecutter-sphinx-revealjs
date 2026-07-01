@@ -24,7 +24,7 @@ myst-parser==5.0.0
 packaging==26.2
 pipdeptree==2.35.3
 pluggy==1.6.0
-prek==0.3.11
+prek==0.4.3
 Pygments==2.20.0
 pyrefly==0.63.1
 pytest==9.0.3
