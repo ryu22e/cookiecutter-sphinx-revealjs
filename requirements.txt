@@ -27,7 +27,7 @@ pluggy==1.6.0
 prek==0.4.3
 Pygments==2.20.0
 pyrefly==1.1.1
-pytest==9.0.3
+pytest==9.1.1
 pytest-cov==7.1.0
 pytest-randomly==4.1.0
 python-dateutil==2.9.0.post0
