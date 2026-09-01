@@ -10,7 +10,7 @@ charset-normalizer==3.4.9
 click==8.4.2
 cookiecutter==2.7.1
 coverage==7.15.2
-docutils==0.22.4
+docutils==0.23
 idna==3.18
 imagesize==2.0.0
 importlib_resources==7.1.0
@@ -18,9 +18,9 @@ iniconfig==2.3.0
 Jinja2==3.1.6
 markdown-it-py==4.0.0
 MarkupSafe==3.0.3
-mdit-py-plugins==0.5.0
+mdit-py-plugins==0.6.1
 mdurl==0.1.2
-myst-parser==5.0.0
+myst-parser==5.1.0
 packaging==26.2
 pipdeptree==4.2.0
 pluggy==1.6.0
@@ -39,7 +39,7 @@ roman-numerals==4.1.0
 ruff==0.15.0
 setuptools==83.0.0
 six==1.17.0
-snowballstemmer==3.0.1
+snowballstemmer==3.1.1
 soupsieve==2.9.1
 Sphinx==9.1.0
 sphinxcontrib-applehelp==2.0.0
