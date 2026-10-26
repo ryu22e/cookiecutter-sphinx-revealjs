@@ -4,7 +4,7 @@ babel==2.18.0
 beautifulsoup4==4.15.0
 binaryornot==0.6.0
 budoux==0.9.1
-certifi==2026.7.22
+certifi==2026.10.19
 chardet==7.6.0
 charset-normalizer==3.5.1
 click==8.5.0
